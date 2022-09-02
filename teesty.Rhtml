@@ -1,0 +1,10 @@
+library(plotly)
+library(htmlwidgets)
+
+trace0 <- c("8/25", "8/26", "8/27", "8/28", "8/29", "8/30", "8/31")
+trace1 <- c(5776, 5435, 3486, 5727, 7343, 13397, 5458)
+cav <- data.frame(trace0, trace1)
+
+plum <- plot_ly(cav, x = trace0, y = trace1, name = 'views', type = 'scatter', mode = 'lines') 
+plum
+#ugh
